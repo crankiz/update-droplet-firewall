@@ -26,3 +26,14 @@ The firewall id can be found with this command:
 ```
 doctl compute firewall list
 ```
+
+Move script and make it executable
+---
+```
+chmod +x update-do-firewall.sh
+mv update-do-firewall.sh /usr/local/bin/
+```
+
+Create cronjob to run this on a schedule
+---
+*/5 * * * * /usr/local/bin/update-do-firewall.sh
