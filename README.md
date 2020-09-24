@@ -36,4 +36,6 @@ mv update-do-firewall.sh /usr/local/bin/
 
 Create cronjob to run this on a schedule
 ---
+```
 */5 * * * * /usr/local/bin/update-do-firewall.sh
+```
